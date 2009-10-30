@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		setup\console.iss = setup\console.iss
 		devel_changes.txt = devel_changes.txt
+		setup\dlls\FreeImage.dll = setup\dlls\FreeImage.dll
+		setup\dlls\FreeImagePlus.dll = setup\dlls\FreeImagePlus.dll
 	EndProjectSection
 EndProject
 Global

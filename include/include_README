@@ -1,0 +1,5 @@
+Boost came from http://www.boost.org/. It is at version 1.40.0. The license is BSD like.
+
+atlgdix.h came from http://www.viksoe.dk/code/atlgdix.htm. It can't be resold. We need to solve this GPL compliance issue.
+
+The rest of the include files are from http://www.viksoe.dk/code/cooltab.htm and have the same GPL compliance issue.
