@@ -144,6 +144,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/Zm200"
+				AdditionalIncludeDirectories="..\include;C:\WTL80\include"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;NDEBUG"
 				ExceptionHandling="1"
 				RuntimeLibrary="2"
@@ -159,7 +160,7 @@
 				Name="VCResourceCompilerTool"
 				PreprocessorDefinitions="NDEBUG"
 				Culture="1033"
-				AdditionalIncludeDirectories="$(IntDir)"
+				AdditionalIncludeDirectories="&quot;$(IntDir)&quot;;c:\WTL80\include"
 			/>
 			<Tool
 				Name="VCPreLinkEventTool"
@@ -194,6 +195,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
+				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)"
 			/>
 		</Configuration>
 	</Configurations>
