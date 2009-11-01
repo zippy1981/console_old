@@ -169,14 +169,23 @@ int Run(LPTSTR lpstrCmdLine = NULL, int nCmdShow = SW_SHOWDEFAULT)
 
 	if (strConfigFile.length() == 0)
 	{
-		strConfigFile = wstring(L"console.xml");
-//		strConfigFile = Helpers::GetModulePath(NULL) + wstring(L"console.xml");
+//		strConfigFile = wstring(L"console.xml");
+		strConfigFile = Helpers::GetModulePath(NULL) + wstring(L"console.xml");
 //		strConfigFile = wstring(::_wgetenv(L"APPDATA")) + wstring(L"\\Console\\console.xml");
+	}
+
+	// TODO: instead of returning, load a default console.xml from an embedded resource.
+	if (!PathFileExists(strConfigFile.c_str())) {
+		// TODO: Dynamically generate the full path name of the xml file.
+		// Perhaps I can use std::wstring to do this
+		MessageBox(0, L"Could not find config file \"console.xml\"", L"Fatal Error", MB_OK);
+		return -1;
 	}
 
 	if (!g_settingsHandler->LoadSettings(Helpers::ExpandEnvironmentStrings(strConfigFile)))
 	{
-		//TODO: error handling
+		//TODO: better error handling
+		MessageBox(0, L"Error parsing config file \"console.xml\"", L"Fatal Error", MB_OK);
 		return -1;
 	}
 
