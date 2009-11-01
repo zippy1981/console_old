@@ -105,7 +105,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)"
+				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)&#x0D;&#x0A;"
 			/>
 		</Configuration>
 		<Configuration
@@ -195,7 +195,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)"
+				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>

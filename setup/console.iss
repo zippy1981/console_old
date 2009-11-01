@@ -22,7 +22,7 @@ Source: setup\dlls\FreeImagePlus.dll; DestDir: {app}; Components: main
 Source: setup\dlls\msvcp71.dll; DestDir: {app}; Components: main
 Source: setup\dlls\msvcr71.dll; DestDir: {app}; Components: main
 ; Config files
-Source: setup\config\console.xml; DestDir: {app}; Components: main
+Source: console\console.xml; DestDir: {app}; Components: main
 ; Help File -- To compile download the HTML Help Workshop from Microsoft
 Source: help\console.chm; DestDir: {app}; Components: main
 ; Fonts

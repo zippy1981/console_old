@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <settings>
-	<console change_refresh="10" refresh="100" rows="25" columns="80" buffer_rows="40" buffer_columns="120" shell="" init_dir="" start_hidden="0" save_size="0">
+	<console change_refresh="10" refresh="100" rows="47" columns="107" buffer_rows="5000" buffer_columns="0" shell="" init_dir="" save_size="1" start_hidden="0">
 		<colors>
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="0" g="0" b="128"/>
@@ -21,26 +21,25 @@
 		</colors>
 	</console>
 	<appearance>
-		<font name="Courier New" size="10" bold="0" italic="0">
-			<color use="0" r="128" g="0" b="128"/>
+		<font name="MiscFixedSC613" size="9" bold="0" italic="0" smoothing="0">
+			<color use="0" r="0" g="0" b="0"/>
 		</font>
-		<window title="Debug console" icon="F:\Smece\a.ico" use_tab_icon="1" use_console_title="1" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="20"/>
-		<controls show_menu="1" show_toolbar="1" show_statusbar="1" show_tabs="1" hide_single_tab="1" show_scrollbars="1"/>
+		<window title="Console" icon="" use_tab_icon="1" use_console_title="1" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="25"/>
+		<controls show_menu="0" show_toolbar="1" show_statusbar="0" show_tabs="1" hide_single_tab="1" show_scrollbars="1"/>
 		<styles caption="1" resizable="1" taskbar_button="1" border="1" inside_border="2" tray_icon="1">
-			<selection_color r="255" g="255" b="255" />
+			<selection_color r="255" g="255" b="255"/>
 		</styles>
-		<position x="-1" y="-1" dock="-1" snap="0" z_order="0" save_position="0"/>
+		<position x="275" y="218" dock="-1" snap="-1" z_order="0" save_position="1"/>
 		<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0"/>
 	</appearance>
 	<behavior>
-		<copy_paste copy_on_select="0" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0" />
+		<copy_paste copy_on_select="1" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0"/>
 		<scroll page_scroll_rows="0"/>
-		<tab_highlight flashes="3" stay_highligted="1" />
-		<animate type="0" horz_direction="1" vert_direction="0" time="200" />
+		<tab_highlight flashes="3" stay_highligted="1"/>
 	</behavior>
-	<hotkeys use_scroll_lock="0">
+	<hotkeys use_scroll_lock="1">
+		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="83" command="settings"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="112" command="help"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="settings"/>
 		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="115" command="exit"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="112" command="newtab1"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="113" command="newtab2"/>
@@ -84,33 +83,15 @@
 	<mouse>
 		<actions>
 			<action ctrl="0" shift="0" alt="0" button="0" name="copy"/>
-			<action ctrl="0" shift="0" alt="0" button="0" name="select"/>
-			<action ctrl="0" shift="0" alt="0" button="0" name="paste"/>
-			<action ctrl="0" shift="0" alt="0" button="0" name="drag"/>
-			<action ctrl="0" shift="0" alt="0" button="2" name="menu"/>
+			<action ctrl="0" shift="0" alt="0" button="1" name="select"/>
+			<action ctrl="0" shift="0" alt="0" button="2" name="paste"/>
+			<action ctrl="1" shift="0" alt="0" button="1" name="drag"/>
+			<action ctrl="0" shift="0" alt="0" button="3" name="menu"/>
 		</actions>
 	</mouse>
 	<tabs>
 		<tab title="Console2">
 			<console shell="" init_dir=""/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="2" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="153" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="cmd">
-			<console shell="cmd.exe" init_dir="F:\"/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="1" r="0" g="0" b="0">
-				<image file="F:\Smece\back2.bmp" relative="0" extend="0" position="1">
-					<tint opacity="70" r="0" g="255" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="asd">
-			<console shell="cmd.exe" init_dir=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -118,12 +99,31 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Test tab bash">
-			<console shell="bash.exe" init_dir=""/>
-			<cursor style="1" r="255" g="255" b="255"/>
-			<background type="2" r="0" g="0" b="0">
+		<tab title="PowerShell">
+			<console shell="%SYSTEMROOT%\system32\windowspowershell\v1.0\powershell.exe" init_dir=""/>
+			<cursor style="0" r="255" g="255" b="0"/>
+			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="165" r="0" g="0" b="0"/>
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<tab title="PyCmd Python Enhanced CommandShell">
+			<console shell="%PROGRAMFILES%\PyCmd\PyCmd.exe" init_dir=""/>
+			<cursor style="0" r="255" g="255" b="0"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<!-- Command line SQL prompt. Might need tweaking on your box. -->
+		<tab title="SQLCMD Local SQL Express Database">
+			<console shell="&quot;%PROGRAMFILES%\Microsoft SQL Server\100\Tools\Binn\sqlcmd.exe&quot; -S .\SQLEXPRESS" init_dir=""/>
+			<cursor style="0" r="255" g="255" b="0"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
 		</tab>
