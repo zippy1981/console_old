@@ -1,3 +1,4 @@
+; You can download the "compiler" to build a setup prog with this file from http://www.jrsoftware.org/isdl.php
 [Setup]
 OutputDir=setup
 SourceDir=..\
@@ -16,13 +17,14 @@ DefaultGroupName=Console
 ; Binary files
 Source: bin\release\Console.exe; DestDir: {app}; Components: main
 Source: bin\release\ConsoleHook.dll; DestDir: {app}; Components: main
-Source: help\console.chm; DestDir: {app}; Components: main
 Source: setup\dlls\FreeImage.dll; DestDir: {app}; Components: main
 Source: setup\dlls\FreeImagePlus.dll; DestDir: {app}; Components: main
 Source: setup\dlls\msvcp71.dll; DestDir: {app}; Components: main
 Source: setup\dlls\msvcr71.dll; DestDir: {app}; Components: main
 ; Config files
 Source: setup\config\console.xml; DestDir: {app}; Components: main
+; Help File -- To compile download the HTML Help Workshop from Microsoft
+Source: help\console.chm; DestDir: {app}; Components: main
 ; Fonts
 Source: setup\fonts\FixedMedium5x7.fon; DestDir: {fonts}; FontInstall: FixedMedium5x7; Components: fonts; Flags: uninsrestartdelete fontisnttruetype
 Source: setup\fonts\FixedMedium5x8.fon; DestDir: {fonts}; FontInstall: FixedMedium5x8; Components: fonts; Flags: uninsrestartdelete fontisnttruetype
