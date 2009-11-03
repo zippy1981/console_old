@@ -195,7 +195,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)&#x0D;&#x0A;"
+				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\res\powershell.ico $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\res\vitk15.ico $(TargetDir)"
 			/>
 		</Configuration>
 	</Configurations>
@@ -465,7 +465,15 @@
 				>
 			</File>
 			<File
+				RelativePath=".\res\powershell.ico"
+				>
+			</File>
+			<File
 				RelativePath=".\res\toolbar.bmp"
+				>
+			</File>
+			<File
+				RelativePath=".\res\vitk15.ico"
 				>
 			</File>
 		</Filter>

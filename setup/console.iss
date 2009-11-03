@@ -2,11 +2,11 @@
 [Setup]
 OutputDir=setup
 SourceDir=..\
-OutputBaseFilename=Console 2.00 Beta b125
+OutputBaseFilename=Console 2.00 Beta b125.zippy1981_r2
 VersionInfoVersion=2.00
 MinVersion=0,5.0.2195sp3
 AppName=Console
-AppVerName=Console 2.00 Beta build 125
+AppVerName=Console 2.00 Beta build 125.zippy1981_r2
 DefaultDirName={pf}\Console
 AllowNoIcons=true
 ShowLanguageDialog=no
@@ -25,6 +25,9 @@ Source: setup\dlls\msvcr71.dll; DestDir: {app}; Components: main
 Source: console\console.xml; DestDir: {app}; Components: main
 ; Help File -- To compile download the HTML Help Workshop from Microsoft
 Source: help\console.chm; DestDir: {app}; Components: main
+; Icons
+Source: console\res\powershell.ico; DestDir: {app}; Components: main
+Source: console\res\vitk15.ico; DestDir: {app}; Components: main
 ; Fonts
 Source: setup\fonts\FixedMedium5x7.fon; DestDir: {fonts}; FontInstall: FixedMedium5x7; Components: fonts; Flags: uninsrestartdelete fontisnttruetype
 Source: setup\fonts\FixedMedium5x8.fon; DestDir: {fonts}; FontInstall: FixedMedium5x8; Components: fonts; Flags: uninsrestartdelete fontisnttruetype
