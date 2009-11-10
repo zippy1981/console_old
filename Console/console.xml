@@ -104,6 +104,15 @@ Zip with Original XML file: http://www.vcritical.com/wp-content/uploads/2009/02/
 				</image>
 			</background>
 		</tab>
+		<tab title="Visual Studio 2008 Command Prompt">
+			<console shell="%comspec% /k &quot;c:\Program Files\Microsoft Visual Studio 9.0\VC\vcvarsall.bat&quot; x86" init_dir=""/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
 		<tab title="VI Toolkit" icon="vitk15.ico">
 			<console shell="C:\WINDOWS\system32\windowspowershell\v1.0\powershell.exe -PSConsoleFile &quot;C:\Program Files\VMware\Infrastructure\VIToolkitForWindows\vim.psc1&quot; -NoExit -Command &quot;. \&quot;C:\Program Files\VMware\Infrastructure\VIToolkitForWindows\Scripts\Initialize-VIToolkitEnvironment.ps1\&quot; &quot;" init_dir=""/>
 			<cursor style="0" r="255" g="255" b="0"/>

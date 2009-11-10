@@ -56,7 +56,7 @@
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;_DEBUG"
 				MinimalRebuild="false"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
+				RuntimeLibrary="1"
 				UsePrecompiledHeader="2"
 				WarningLevel="4"
 				Detect64BitPortabilityProblems="false"
@@ -114,6 +114,7 @@
 			IntermediateDirectory="..\obj\Console\Release"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			UseOfMFC="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"
 			CharacterSet="1"
 			>
@@ -147,7 +148,7 @@
 				AdditionalIncludeDirectories="..\include;C:\WTL80\include"
 				PreprocessorDefinitions="WIN32;_WINDOWS;STRICT;NDEBUG"
 				ExceptionHandling="1"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				UsePrecompiledHeader="2"
 				WarningLevel="4"
 				Detect64BitPortabilityProblems="false"
@@ -195,7 +196,7 @@
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
-				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\res\powershell.ico $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\res\vitk15.ico $(TargetDir)"
+				CommandLine="copy $(SolutionDir)\setup\dlls\FreeImage.dll $(TargetDir)&#x0D;&#x0A;copy $(SolutionDir)\setup\dlls\FreeImagePlus.dll $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\Console.xml $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\res\powershell.ico $(TargetDir)&#x0D;&#x0A;copy $(ProjectDir)\res\vitk15.ico $(TargetDir)&#x0D;&#x0A;"
 			/>
 		</Configuration>
 	</Configurations>
